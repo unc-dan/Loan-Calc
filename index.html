@@ -7,8 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <style>
+        #loading, #results { display: none; }
+    </style>
+    <title>Loan Calculator</title>
   </head>
   <body class="bg-dark">
     <div class="container">
@@ -20,7 +22,7 @@
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                            <span class="input-group-text">$</span>
+                            <span class="input-group-text">£</span>
                         </div>
                             <input type="text" class="form-control" id="amount" placeholder="Loan Amount">
                         </div>
@@ -41,16 +43,16 @@
                     </div>
                 </form>
                 <!-- LOADER HERE -->
-                <!-- <div id="loading">
+                <div id="loading">
                     <img src="loading.gif" alt="">
-                </div> -->
+                </div>
                 <!-- RESULTS -->
                 <div id="results" class="pt-4">
                 <h5>Results</h5>
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                        <span class="input-group-text">Monthly Payment</span>
+                        <span class="input-group-text">Monthly Repayment</span>
                     </div>
                         <input type="number" class="form-control" id="monthly-payment" disabled>
                     </div>
@@ -58,7 +60,7 @@
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                        <span class="input-group-text">Total Payment</span>
+                        <span class="input-group-text">Total Repayment</span>
                     </div>
                         <input type="number" class="form-control" id="total-payment" disabled>
                     </div>
